@@ -1,0 +1,98 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
+.container img{
+  margin-right: 10px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/entrée.jpg') no-repeat center center/cover;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-content h1 {
+  animation: slideDown 1s ease forwards;
+}
+
+.hero-content p {
+  animation: fadeIn 2s ease forwards;
+}
+
+.hero-content a.btn {
+  transition: all 0.3s ease;
+}
+
+.hero-content a.btn:hover {
+  transform: scale(1.1);
+}
+
+/* ===== ANIMATIONS CSS ===== */
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-50px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+/* ===== ABOUT ===== */
+#about img {
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.about-text {
+  animation: slideRight 1s ease forwards;
+}
+
+@keyframes slideRight {
+  0% { opacity: 0; transform: translateX(-50px);}
+  100% { opacity: 1; transform: translateX(0);}
+}
+
+/* ===== CARDS ===== */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== GALERIE ===== */
+#gallery img {
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== CTA ===== */
+.cta a.btn {
+  transition: all 0.3s ease;
+}
+
+.cta a.btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer a {
+  text-decoration: none;
+ 
+}
+
+footer a:hover {
+  color: #1c7ed6;
+}

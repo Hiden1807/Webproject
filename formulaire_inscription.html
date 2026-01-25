@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription scolaire</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/formulaire.css">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="bg-ligh">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
+  
+    <div class="container">
+        <img src="images/logo.jpg" class = "img-fluid" class="me-2" width="100px"> <br>
+        <a class="navbar-brand fw-bold" href="#">Saint Téophile</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="apropos.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="login_eleve.html">connexion-élève</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulaire_inscription.html">Inscription</a></li>
+          <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Form -->
+        <section class="contenaire my-5">
+             <h2 > FORMULAIRE D'INSCRIPTION  </h2>
+            <form >   
+                 <div class="col-md-10" style="margin-bottom:100px">  
+                 <!-- Nom au complèt -->
+                    <label for="prenom">Prénom</label>
+                    <input type="texte" name="nom " placeholder="nom de l'élève" class="input-spancing">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom">
+                    <label for="postnom" name="postnom">Post-nom</label>
+                      <input type="text" id="postnom">
+
+                      <!-- Date de naissance -->
+                    <label for="dateNaissance">Date de naissance</label>
+                  <input type="date" name="birth_date" placeholder="Date de naissance">
+                <div class="form-group">
+                    <label for="lieuNaissance">Lieu de naissance</label>
+                    <input type="text" id="lieuNaissance" name="lieuNaissance">
+                  <div class="form-group"> 
+                    <label>Sexe :</label>
+                 <select name="sexe">
+                   <option value="M">M</option>
+                   <option value="F">F</option>
+                  </select>
+                 <label for="section">option</label>
+                 <input type="text" id="section" name="section"> 
+                 <label for="classe actuelle">classe actuelle</label>
+                <input id="classe actuelle">
+                    <label for="Nationalité">Nationalité</label>
+                <input type="Nationalité">
+                <div class="form-group">
+                <label placeholder="id" id=" province  d'origine">province d'origine</label>
+               <input aria-placeholder="id" id="kongo centrale, bandundu ,gemena"></select>
+               <label for="Adresse complète">Adresse complète</label>
+                <input type="text">
+                <label for="numéro de téléphone de l'élève">numéro de téléphone de l'élève</label>
+                <input type="number">
+                 <label for="numéro de téléphone du tuteur ">numéro de téléphone du tuteur</label>
+                <input type="number">
+                <label for="Noms des parents ">Noms des parents </label>
+                <input style="margin-bottom:10px;" type="texte" name="full_name " placeholder="nom complet de papa" class="input-spancing">
+                <input type="texte" name="full_name " placeholder="nom complet de la maman" class="input-spancing">
+                <label for="tuteurs de l'élève">tuteurs de l'élève</label>
+                <input type="text" id="tuteurs de l'élève">
+                <label for="photo passeport de l'élève">Photo passeport de l'élève</label>
+               <input type="file">
+                   <!-- coordonnée des parents-->
+                 <div class="form-group">
+               <label for="number">Numéro des parents</label>
+               <input  style="margin-bottom:10px;" type="number" placeholder="Numéro de papa" class="input-spancing">
+               <input type="number" placeholder="Numéro de la maman" class="input-spancing"></div>
+                  <!-- Submit Button -->
+                <button type="submit" class="submit-btn">S'inscrire</button>
+               </form>
+               </div>
+               </div>
+                </div>
+            </div>
+            </div>
+   
+          </section>
+         
+    </body>
+
+</html>

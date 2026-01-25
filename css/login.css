@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Podkova:wght@400..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: "poppins", sans-serif;
+
+}
+body {
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(sylain.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    background-color: rgb(135, 206, 235, 0.4);
+    border: 2px solid rgba(255, 225, 255, 0.2);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    width: 420px;
+    border-radius: 20px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+.input-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-box input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 35px;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 225, 0.8);
+    color: #fff;
+    padding-right: 40px;
+
+}
+.input-box input::placeholder {
+    color: #fff;
+}
+
+
+.input-box i {
+    position: absolute;
+    transform: translateY(-50%);
+    right: 20px;
+    top: 50%;
+    color: #fff;
+    
+}
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.remember-forgot a , .register-link a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.remember-forgot a:hover , .register-link a {
+    text-decoration: underline;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.login-btn:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,0.2);
+    color: #fff
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 14px;
+}

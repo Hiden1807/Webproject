@@ -1,0 +1,114 @@
+/* 1. SECTION SLIDER (HAUT DE PAGE)*/
+.css-slider {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.slider-nav a {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* 2. EFFET DE ZOOM (GALERIE ET SALLES)*/
+
+/* Étape A : Le cadre (ne bouge pas) */
+.gallery-card,
+.image {
+  overflow: hidden; /* Empêche l'image de dépasser du cadre en zoomant */
+  border-radius: 10px; /* Garde les coins arrondis */
+  position: relative;
+  display: block;
+}
+
+/* Étape B : L'image par défaut */
+.gallery-card img,
+.image img {
+  /* La transition pour un zoom fluide et un dé-zoom fluide */
+  transition: transform 0.3s ease-in-out !important;
+  display: block;
+  width: 100%;
+}
+
+/* Étape C : L'EFFET AU SURVOL (Dès que la souris entre sur l'image) */
+.gallery-card img:hover,
+.image img:hover {
+  /* Zoom de 15% instantané au passage du curseur */
+  transform: scale(1.15) !important;
+
+  /* Ajoute une ombre pour l'effet de profondeur */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+  /* Passe l'image au dessus si nécessaire */
+  z-index: 5;
+  cursor: pointer;
+}
+
+/*3. AUTRES STYLES */
+header p {
+  max-width: 800px;
+}
+
+.description {
+  background-color: skyblue;
+}
+
+header h1,
+footer h5 {
+  color: skyblue;
+}
